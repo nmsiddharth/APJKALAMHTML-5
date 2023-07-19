@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+</head>
+<body>
+    <center>
+        <h1>This is Canvas Tag</h1>
+        <p>
+            the HTML canvas element provides HTML a bitmaps surface to work with.It is used to draw graphivs on the webpage.The <b>HTML 5 canvas tag</b> is used to draw graphics usings scripting language like javascript.
+      </p>
+    </center>
+    <hr>
+
+    <canvas>This is First canvas tag</canvas>
+
+    <canvas id="mycanvas" width="300px" height="100px" style="border:2px solid red;"></canvas>
+
+    <p><b>Note: It is always necessary to specify the id attribute and the height and width attribute to define the size of the canvas.You can have multiple canvas elements on one HTML page. </b></p>
+    <hr>
+    <center>
+        <h3>Drawing Rectangle on canvas</h3>
+    </center>
+    <hr>
+
+
+    <canvas id="mycanvas3" width="250" height="150" style="border: 1px solid blue;"></canvas>
+
+
+    <script>
+        let canvas3=document.getElementById("mycanvas3").getContext("2d");
+        canvas3.fillStyle="red";
+        canvas3.fillRect(25,25, 100,100);
+    </script>
+    <hr>
+
+    <center>
+        <h3>Drawing Circle on Canvas</h3>
+    </center>
+    <canvas id="mycanvascircle" width="200" height="200" style="border:1px solid green;"></canvas>
+
+    <script>
+        let mycanvascircle=document.getElementById("mycanvascircle").getContext("2d");
+        mycanvascircle.fillStyle="red";
+        mycanvascircle.arc(100,100,90,0,2*Math.PI);
+        mycanvascircle.fill();
+    </script>
+
+    <hr>
+     <center>
+        <h3>Drawing text on canvas</h3>
+     </center>
+     <canvas id="textcanvas" width="578" height="200" style="border:1px solid teal;"></canvas>
+
+     <script>
+        let textcanvas=document.getElementById("textcanvas").getContext("2d");
+        textcanvas.font="40pt Times New Roman";
+        textcanvas.fillStyle="blue";
+        textcanvas.fillText('Hello, world!', 150,100);
+     </script>
+    
+</body>
+</html>

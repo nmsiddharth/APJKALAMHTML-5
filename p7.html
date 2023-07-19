@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+    <style>
+        dialog{
+            background-color: teal;
+            color: white;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>DETAILS TAG</h3>
+        <p>This tag is used to specify the additional details on the web page that the user can view or hide on demand.</p>
+    </center>
+    <hr>
+    <center>
+        <h3>This is SUMMARY TAG</h3>
+        <p>The SUMMARY TAG is used with DETAILS TAG. It is used as a summary,caption or legend for the content of details element.</p>
+    </center>
+    <hr>
+
+    <details>
+        <summary>HTML</summary>
+        <h3>HTML</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quis sit, recusandae officia fugiat necessitatibus voluptas a, ea laborum culpa, ipsam aspernatur voluptatibus! Quibusdam voluptatibus natus ipsum tenetur unde.</P>
+
+    </details>
+
+    <details>
+        <summary>CSS</summary>
+        <h3>CSS</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quis sit, recusandae officia fugiat necessitatibus voluptas a, ea laborum culpa, ipsam aspernatur voluptatibus! Quibusdam voluptatibus natus ipsum tenetur unde.</P>
+        
+    </details>
+
+    <details>
+        <summary>JS</summary>
+        <h3>JS</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quis sit, recusandae officia fugiat necessitatibus voluptas a, ea laborum culpa, ipsam aspernatur voluptatibus! Quibusdam voluptatibus natus ipsum tenetur unde.</P>
+        
+    </details>
+
+    <hr>
+    <center>
+        <h3>TIME TAG</h3>
+        <p><b>HTML time</b> tag is used to define date and time.It displays time value in a 24 hr clock or a precise date in a geogrian calender in HTML</p>
+    </center>
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus autem libero fugiat optio cum! Dolore, doloribus beatae! Facilis harum neque doloremque ratione. Cumque veniam perferendis unde deserunt culpa a 2:30pm nisi?</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, quod, deserunt doloremque totam ex doloribus est fugit minus ratione, veritatis error eius fugiat nobis? At aut tempora<time>2:30</time> suscipit dolorum ipsam!
+    </p>
+
+    <hr>
+    <center>
+        <h3>This is Dialog Tag</h3>
+        <p><b>( This tag is to create a new popup dialog on a web page)</b></p>
+    </center>
+    <hr>
+    <dialog id="dialogID">
+        <button type="button" id="closebutton" >&times;</button>
+        <h1>FULL STACK</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nihil placeat excepturi dicta dolores necessitatibus neque impedit deserunt inventore fugiat dolorum ut accusantium id, reprehenderit delectus accusamus dolor voluptatem vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facilis perspiciatis suscipit. Ipsum ut at officiis dolorem optio voluptate sed fugiat pariatur necessitatibus, possimus tempore consequatur praesentium, earum autem saepe.</p>
+    </dialog>
+    <button type="button" id="opendialog">Open Dialog Tag</button>
+
+    <script>
+        document.getElementById("opendialog").onclick= function() {
+            document.getElementById("dialogID").show();
+        };
+
+            document.getElementById("closebutton").onclick= function() {
+            document.getElementById("dialogID").close();
+            };
+
+
+    </script>
+</body>
+</html>
