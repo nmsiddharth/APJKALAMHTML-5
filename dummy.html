@@ -3,54 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML-5</title>
-
-    <style>
-      progress {
-        height: 50px;
-        width: 100%;
-        border: 1px solid transparent;
-      }
-      progress::-webkit-progress-bar{
-        background-color: aquamarine;
-      }
-
-      progress::-webkit-progress-value{
-        background-color: black;
-      }
-    </style>
-
-    
+    <title>Assignment 4</title>
 </head>
 <body>
+    <h1><center>New Employee Details Form</center></h1>
+    <br>
+    <h2>Personal Details</h2>
 
-  <center>
-    <h2>SVG TAG</h2>
+    <form>
+        <table cellpadding="1">
+            <tr>
+                <td>
+                    Your name
+                </td>
+                <td>
+                    <select>
+                        <option></option>
+                        <option>Opt 1</option>
+                        <option>Opt 2</option>
+                        <option>Opt 3</option>
+                      </select>
+                </td>
+                <td>
+                    <input type="text"  name="first name" required>
+                </td>
+                <td>
+                    <input type="text"  name="Middle name" required>
+                </td>
+                <td>
+                    <input type="text" name="Surname" required>
+                </td>
+            </tr>
+             <tr>
+                <td></td>
+                <td>Title</td>
+                <td>First Name</td>
+                <td>Middle Name</td>
+                <td>Surname</td>
+             </tr>           
+
+            <tr>
+                <td>Gender</td>
+            <td><label for="">Male</label>
+                <input type="radio" value="Male" id="male" name="gender">
+
+                <label for="">Female</label>
+                <input type="radio" value="Female" id="female" name="gender"></td>
+            </tr>
+           
+
+            <tr>
+                <td>Birth Date</td>
+                <td><input type="date"  name=birthdetails required></td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                
+                <td><textarea name="streetaddress"   cols="12" rows="1" required></textarea></td>
+                <td><textarea name="streetaddressline2"    cols="12" rows="1" required></textarea></td>
+                
+                
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Street Address</td>
+                    <td>Street Address line 2</td>
+                </tr>
+                <tr>
+                   <td></td>
+
+                    
+                        <td><textarea name="suburb"    cols="12" rows="1" required></textarea></td>
+                <td><textarea name="state"     cols="12" rows="1" required></textarea></td>
+                <td><textarea name="postcode"    cols="12" rows="1" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>suburb</td>
+                    <td>State</td>
+                    <td>Postcode</td>
+                    </tr>
+                    
+                
+
+                <tr>
+                    <td>Contact</td>
+                    <td>Home Phone</td>
+                    <td>Mobile Phone</td>
+                    <td>Email Address</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="tel"  name="tel" required> </td>
+                    <td><input type="tel"  name="tel 2" required> </td>
+                    <td><input type="email"  name="email" required></td>
+               
+               
+            </tr>
+                    
+             
+
+                <tr>
+                    <td >Are u an Australian? </td>
+                    <td><label for="">Yes</label>
+                        <input type="radio" value="Yes" name="tick">
+                        <label for="">No</label>
+                    <input type="radio" value="No" name="tick"></td>
+                </tr>
+
+                <tr>
+                    <td >Do u have Working Visa?</td>
+                    <td><label for="">Yes</label>
+                        <input type="radio" value="Yes" name="tick">
+                        <label for="">No</label>
+                    <input type="radio" value="No" name="tick"></td>
+                </tr>
+
+           </table>
+
     
-  </center>
-  <hr>
-  <svg>hi</svg>
 
-  <svg width="100" height="100" > 
+    <h2>Employment Details</h2>
     
-    <rect width="100" height="100" fill="red" stroke="grey" stroke-width="10"></rect> 
-    <text x="30" y="60" fill="black">hiiiii</text>
-  
-  </svg>
+        <table>
+            <tr>
+                <td <input required>Job Title</td>
+                <td><input type="text" placeholder="" name="job" required</td>
+            </tr>
 
-  <hr>
+            <tr>
+                <td >Commencement Date</td>
+                <td><input type="text" placeholder="" name="date" required</td>
+            </tr>
 
-  <svg width="200" height="200" >
+            <tr>
+                <td>File Tax Number</td>
+                <td><input type="number" placeholder="" name="faxnumber" required</td>
+            </tr>
 
-<circle r="80" cx="100" cy="100"    fill="pink" stroke="black" stroke-width="12"></circle>
-<text x="80" y="90" fill="black">hiiiii</text>
+            <tr>
+                <td >Employment Status</td>
+                <td>
+                    <label for="">Full Time</label>
+                    <input type="radio" value="full time" name="status">
+                   
+                    <label for="">Part Time</label>
+                <input type="radio" value="part time" name="status">
 
+                <label for="">Temporory</label>
+                    <input type="radio" value="temporory" name="status">
+                    
+                     <label for="">Casual</label>
+                        <input type="radio" value="casual" name="status">
+                </td>
+            </tr>
+
+
+
+        </table>
     
-  </svg>
+
+    <h2>Emergency Contact Details</h2>
+    
+        <table>
+            <tr>
+                <td>
+                     Name
+                </td>
+                <td>
+                    <select>
+                        <option></option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                      </select>
+                </td>
+                <td>
+                    <input type="text"  name="first name" required>
+                </td>
+                <td>
+                    <input type="text"  name="Middle name" required>
+                </td>
+                <td>
+                    <input type="text"  name="Surname" required>
+                </td>
+            </tr> 
+            <tr>
+                <td></td>
+                <td>Title</td>
+                <td>First Name</td>
+                <td>Middle Name</td>
+                <td>Surname</td>
+            </tr>
+            <tr>
+                <td>Relationship</td>
+                <td><input type="text"  name="relationship" required></td>
+
+            </tr>
+
+            <tr>
+                <td>Contact</td>
+                <td>Home Phone</td>
+                    <td>Mobile Phone</td>
+                    <td>Email Address</td>
+                
+                
+            </tr>
+            <tr>
+                <td></td>
+
+                <td><input type="tel"  name="tel" required</td>
+                <td><input type="tel"  name="tel 2" required</td>
+                <td><input type="email" name="email" required</td>
+            </tr>
+        </table>
    
 
-  
-   
+    <h2>Banking Details</h2>
+    
+        <table>
+            <tr>
+                <td>Bank</td>
+                <td>Bank Name</td>
+                <td>Bank Branch</td>
+                
+                
 
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text"  name="bankname" required ></td>
+                <td><input type="text"  name="bankbranch" required></td>
+
+            </tr>
+
+            <tr>
+                <td>Account</td>
+                <td>Account Name</td>
+                <td>Account Number</td>
+                <td>BSB Number</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="text" name="accountname" required></td>
+                <td><input type="text" name="accountnumber" required></td>
+                <td><input type="text"  name="BSBnumber" required></td>
+                </tr>
+                
+
+                
+
+           
+
+            <tr>
+                <td>Employee Signature</td>
+                <td colspan="3"><input type="text"  name="signature" required><button type="button" name="closebutton" >&times;</button> </td>
+
+                
+
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" placeholder="Print your name here" name="name" required></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="text" placeholder="Enter date here" name="date" required></td>
+            </tr>
+
+            
+        </table>
+       
+            <button type="submit"><b>Submit</b></button>
+    
+    </form>
+   
 </body>
 </html>

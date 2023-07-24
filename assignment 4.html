@@ -11,34 +11,39 @@
     <h2>Personal Details</h2>
 
     <form>
-        <table>
+        <table cellpadding="1">
             <tr>
-                <th>
+                <td>
                     Your name
-                </th>
-                <td>
-                    <input type="text" placeholder="Title"  required minlength="2" required list="details">
-                    <datalist id="details">
-        
-                        <option>rd</option>
-                        <option>st</option>
-                        <option>nd</option>
-                    </datalist>
                 </td>
                 <td>
-                    <input type="text" placeholder="First Name" name="first name" required>
+                    <select>
+                        <option></option>
+                        <option>Opt 1</option>
+                        <option>Opt 2</option>
+                        <option>Opt 3</option>
+                      </select>
                 </td>
                 <td>
-                    <input type="text" placeholder="Middle Name" name="Middle name" required>
+                    <input type="text"  name="first name" required>
                 </td>
                 <td>
-                    <input type="text" placeholder="Surname" name="Surname" required>
+                    <input type="text"  name="Middle name" required>
+                </td>
+                <td>
+                    <input type="text" name="Surname" required>
                 </td>
             </tr>
-           
+             <tr>
+                <td></td>
+                <td>Title</td>
+                <td>First Name</td>
+                <td>Middle Name</td>
+                <td>Surname</td>
+             </tr>           
 
             <tr>
-                <th>Gender</th>
+                <td>Gender</td>
             <td><label for="">Male</label>
                 <input type="radio" value="Male" id="male" name="gender">
 
@@ -48,31 +53,59 @@
            
 
             <tr>
-                <th>Birth Date</th>
-                <td><input type="text" placeholder="" name=birth details></td>
+                <td>Birth Date</td>
+                <td><input type="date"  name=birthdetails required></td>
             </tr>
 
             <tr>
-                <th>Address</th>
+                <td>Address</td>
                 
-                <td><textarea name="address"  placeholder="Street Address"   cols="12" rows="1"></textarea></td>
-                <td><textarea name="address"  placeholder="Street Address Line 2"   cols="12" rows="1"></textarea></td>
-                <td><textarea name="address"  placeholder="Suburb"   cols="12" rows="1"></textarea></td>
-                <td><textarea name="address"  placeholder="State"   cols="12" rows="1"></textarea></td>
-                <td><textarea name="address"  placeholder="Postcode"   cols="12" rows="1"></textarea></td>
+                <td><textarea name="streetaddress"   cols="12" rows="1" required></textarea></td>
+                <td><textarea name="streetaddressline2"    cols="12" rows="1" required></textarea></td>
+                
                 
                 </tr>
-
                 <tr>
-                    <th>Contact</th>
-                    <td><input type="tel" placeholder="Home Phone" name="tel" required</td>
-                    <td><input type="tel" placeholder="Mobile Phone" name="tel" required</td>
-                    <td><input type="email" placeholder="Email" name="email" required</td>
+                    <td></td>
+                    <td>Street Address</td>
+                    <td>Street Address line 2</td>
+                </tr>
+                <tr>
+                   <td></td>
+
                     
-                </tr>
+                        <td><textarea name="suburb"    cols="12" rows="1" required></textarea></td>
+                <td><textarea name="state"     cols="12" rows="1" required></textarea></td>
+                <td><textarea name="postcode"    cols="12" rows="1" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>suburb</td>
+                    <td>State</td>
+                    <td>Postcode</td>
+                    </tr>
+                    
+                
 
                 <tr>
-                    <th>Are u an Australian? </th>
+                    <td>Contact</td>
+                    <td>Home Phone</td>
+                    <td>Mobile Phone</td>
+                    <td>Email Address</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="tel"  name="tel" required> </td>
+                    <td><input type="tel"  name="tel 2" required> </td>
+                    <td><input type="email"  name="email" required></td>
+               
+               
+            </tr>
+                    
+             
+
+                <tr>
+                    <td >Are u an Australian? </td>
                     <td><label for="">Yes</label>
                         <input type="radio" value="Yes" name="tick">
                         <label for="">No</label>
@@ -80,7 +113,7 @@
                 </tr>
 
                 <tr>
-                    <th>Do u have Working Visa?</th>
+                    <td >Do u have Working Visa?</td>
                     <td><label for="">Yes</label>
                         <input type="radio" value="Yes" name="tick">
                         <label for="">No</label>
@@ -95,22 +128,22 @@
     <form>
         <table>
             <tr>
-                <th>Job Title</th>
+                <td <input required>Job Title</td>
                 <td><input type="text" placeholder="" name="job" required</td>
             </tr>
 
             <tr>
-                <th>Commencement Date</th>
+                <td >Commencement Date</td>
                 <td><input type="text" placeholder="" name="date" required</td>
             </tr>
 
             <tr>
-                <th>File Tax Number</th>
+                <td>File Tax Number</td>
                 <td><input type="number" placeholder="" name="faxnumber" required</td>
             </tr>
 
             <tr>
-                <th>Employment Status</th>
+                <td >Employment Status</td>
                 <td>
                     <label for="">Full Time</label>
                     <input type="radio" value="full time" name="status">
@@ -135,40 +168,54 @@
     <form>
         <table>
             <tr>
-                <th>
+                <td>
                      Name
-                </th>
-                <td>
-                    <input type="text" placeholder="Title" required list="details">
-                    <datalist id="details">
-        
-                        <option>rd</option>
-                        <option>st</option>
-                        <option>nd</option>
-                    </datalist>
                 </td>
                 <td>
-                    <input type="text" placeholder="First Name" name="first name" required>
+                    <select>
+                        <option></option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                      </select>
                 </td>
                 <td>
-                    <input type="text" placeholder="Middle Name" name="Middle name" required>
+                    <input type="text"  name="first name" required>
                 </td>
                 <td>
-                    <input type="text" placeholder="Surname" name="Surname" required>
+                    <input type="text"  name="Middle name" required>
+                </td>
+                <td>
+                    <input type="text"  name="Surname" required>
                 </td>
             </tr> 
             <tr>
-                <th>Relationship</th>
-                <td><input type="text" placeholder="" name="relationship"></td>
+                <td></td>
+                <td>Title</td>
+                <td>First Name</td>
+                <td>Middle Name</td>
+                <td>Surname</td>
+            </tr>
+            <tr>
+                <td>Relationship</td>
+                <td><input type="text"  name="relationship" required></td>
 
             </tr>
 
             <tr>
-                <th>Contact</th>
-                <td><input type="tel" placeholder="Home Phone" name="tel" required</td>
-                <td><input type="tel" placeholder="Mobile Phone" name="tel" required</td>
-                <td><input type="email" placeholder="Email" name="email" required</td>
+                <td>Contact</td>
+                <td>Home Phone</td>
+                    <td>Mobile Phone</td>
+                    <td>Email Address</td>
                 
+                
+            </tr>
+            <tr>
+                <td></td>
+
+                <td><input type="tel"  name="tel" required</td>
+                <td><input type="tel"  name="tel 2" required</td>
+                <td><input type="email" name="email" required</td>
             </tr>
         </table>
     </form>
@@ -177,38 +224,53 @@
     <form>
         <table>
             <tr>
-                <th>Bank</th>
-                <td><input type="text" placeholder="Bank Name" name="bankname" required></td>
-                <td><input type="text" placeholder="Bank Branch" name="bankbranch" required></td>
+                <td>Bank</td>
+                <td>Bank Name</td>
+                <td>Bank Branch</td>
                 
+                
+
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text"  name="bankname" required ></td>
+                <td><input type="text"  name="bankbranch" required></td>
 
             </tr>
 
             <tr>
-                <th>Account</th>
-                <td><input type="text" placeholder="Account Name" name="accountname" required></td>
-                <td><input type="text" placeholder="Account Number" name="accountnumber" required></td>
-                <td><input type="text" placeholder="BSB Number" name="BSBnumber" required></td>
+                <td>Account</td>
+                <td>Account Name</td>
+                <td>Account Number</td>
+                <td>BSB Number</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="text" name="accountname" required></td>
+                <td><input type="text" name="accountnumber" required></td>
+                <td><input type="text"  name="BSBnumber" required></td>
+                </tr>
+                
 
                 
 
-            </tr>
+           
 
             <tr>
-                <th>Employee Signature</th>
-                <td><input type="text" placeholder="" name="signature" </td>
+                <td>Employee Signature</td>
+                <td colspan="3"><input type="text"  name="signature" required><button type="button" name="closebutton" >&times;</button> </td>
 
                 
 
             </tr>
             <tr>
                 <td></td>
-                <td><input type="text" placeholder="Print your name here" name="name"</td>
+                <td><input type="text" placeholder="Print your name here" name="name" required></td>
             </tr>
 
             <tr>
                 <td></td>
-                <td><input type="text" placeholder="Enter date here" name="date"</td>
+                <td><input type="text" placeholder="Enter date here" name="date" required></td>
             </tr>
 
             
